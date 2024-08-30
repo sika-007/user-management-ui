@@ -2,6 +2,18 @@
 
 This is a React application that displays a user management table with advanced filtering functionality. The application fetches user data from a mock API and allows users to filter by name, username, email, and phone. It uses Redux Toolkit for state management and TypeScript for type safety.
 
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Application Structure](#application-structure)
+- [API](#api)
+- [Challenges Faced](#challenges-faced)
+- [Potential Future Improvements](#potential-future-improvements)
+- [Deployment](#deployment)
+- [Acknowledgements](#acknowledgements)
+
 ## Features
 
 - **User Management Table**: Displays a table of users with columns for name, username, email, and phone.
