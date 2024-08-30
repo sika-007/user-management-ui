@@ -22,6 +22,23 @@ const UserTable: React.FC = () => {
       const userValue = user[key as keyof typeof user];
 
       if (typeof userValue === "string") {
+        const normalize = (str: string) =>
+          str.toLowerCase().replace(/[^a-z0-9]/gi, "");
+        if (key === "phone") {
+          // Normalize phone numbers: Remove all non-numeric characters
+          const normalizedUserPhone = userValue.replace(/\D/g, ""); // Remove all non-digits
+          const normalizedFilterPhone = value.replace(/\D/g, ""); // Remove all non-digits
+          // Check if the normalized phone number includes the filter value
+          return normalizedUserPhone.includes(normalizedFilterPhone);
+        }
+
+        if (key === "username" || key === "email") {
+          // For name and username, remove all non-alphanumeric characters for comparison
+          const normalizedUserValue = normalize(userValue);
+          const normalizedFilterValue = normalize(value);
+          return normalizedUserValue.includes(normalizedFilterValue);
+        }
+
         return userValue.toLowerCase().includes(value.toLowerCase());
       } else if (typeof userValue === "number") {
         return userValue.toString().includes(value); // compare numbers as strings
