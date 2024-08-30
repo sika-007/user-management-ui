@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         <small>by Sika©</small>
       </div>
       <div>
-        <a href="">
+        <a href="https://github.com/sika-007/user-management-ui">
           <FaGithub className="h-6 w-6 md:h-10 md:w-10" />
         </a>
       </div>
