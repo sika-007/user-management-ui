@@ -21,6 +21,8 @@ This is a React application that displays a user management table with advanced 
 - **State Management**: Uses Redux Toolkit for streamlined and efficient state management.
 - **Type Safety**: Comprehensive use of TypeScript to ensure type safety and reduce runtime errors.
 - **User-Friendly Design**: A clean, intuitive user interface that is easy to use.
+![image](https://github.com/user-attachments/assets/0bf36f60-d399-4076-ad36-1b069b394edf)
+
 
 ## Technologies Used
 
